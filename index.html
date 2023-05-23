@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <title>survey form</title>
+</head>
+<body>
+  <div class="container">
+   <div class="header">
+    <div class="column-header">
+     <h1 id="title">title</h1>
+     <p id="description">description</p>
+    </div>
+    <div class="column-image">
+     <div id="image-div">
+       <img src="https://raw.githubusercontent.com/sfoteini/responsive-web-design-freeCodeCamp/fa56b6ef1ca73e59e52153b0aae657717627adcf/survey-form/images/survey_icon.svg" width="400" height="400" alt="Survery form icon">
+     </div>
+    </div>
+   </div>
+   <form id="survery-form">
+   <div class="form-group">
+    <label id="name-label" for="name">name</label>
+    <input 
+    type="text"
+    name="name"
+    id="name"
+    class="form-control"
+    placeholder="enter name"
+    required />
+   </div>
+   <div class="form-group">
+    <label id="email-label" for="email">email</label>
+    <input 
+    type="email"
+    name="email"
+    id="email"
+    class="form-control"
+    placeholder="enter email"
+    required />
+   </div>
+   <div class="form-group">
+    <label id="number-label" for="number">age</label>
+    <input 
+    type="number"
+    name="age"
+    id="number"
+    min="10"
+    max="99"
+    class="form-control"
+    placeholder="enter age"
+    required />
+   </div>
+   <div class="form-group">
+    <p>employment status:</p>
+    <select id="dropdown" name="role" class="form-control" required>
+    <option disabled selected value>select status</option>
+     <option value="student">student</option>
+     <option value="job-full">employed full time</option>
+     <option value="job-part">employed part time</option>
+     <option value="self-employed">self-employed</option>
+     <option value="unemployed">unemployed</option>
+     <option value="retired">retired</option>
+     <option value="preferNo">not say</option>
+     <option value="other">other</option>
+    </select>
+  
+   </div>
+   <div class="form-group">
+    <p>experience level:</p>
+    <select id="dropdown" name="experience" class="form-control" required>
+    <option disabled selected value>select level</option>
+     <option value="junior">junior</option>
+     <option value="mid">mid</option>
+     <option value="senior">senior</option>
+     <option value="executive">executive</option>
+     <option value="other">other</option>
+     
+    </select>
+  
+   </div>
+
+   <div class="form-group">
+   <p>rate the course</p>
+   <label>
+    <input
+     name="user-rate"
+     value="excellent"
+     type="radio"
+     class="input-radio"
+     checked
+    />excellent
+   </label>
+   <label>
+    <input
+     name="user-rate"
+     value="very-good"
+     type="radio"
+     class="input-radio"
+     checked
+    />very good
+   </label>
+   <label>
+    <input
+     name="user-rate"
+     value="good"
+     type="radio"
+     class="input-radio"
+     checked
+    /> good
+   </label>
+   <label>
+    <input
+     name="user-rate"
+     value="fair"
+     type="radio"
+     class="input-radio"
+     checked
+    /> fair
+   </label>
+   <label>
+    <input
+     name="user-rate"
+     value="poor"
+     type="radio"
+     class="input-radio"
+     checked
+    /> poor
+   </label>
+   </div>
+   <div class="form-group">
+    <p>rate the course materials</p>
+    <label>
+     <input
+      name="materials-rate"
+      value="extremely"
+      type="radio"
+      class="input-radio"
+      checked
+     />extemely
+    </label>
+    <label>
+     <input
+      name="materials-rate"
+      value="very"
+      type="radio"
+      class="input-radio"
+      checked
+     />very 
+    </label>
+    <label>
+     <input
+      name="materials-rate"
+      value="somewhat"
+      type="radio"
+      class="input-radio"
+      checked
+     /> somewhat
+    </label>
+    <label>
+     <input
+      name="materials-rate"
+      value="not-so"
+      type="radio"
+      class="input-radio"
+      checked
+     /> not so
+    </label>
+    <label>
+     <input
+      name="materials-rate"
+      value="no"
+      type="radio"
+      class="input-radio"
+      checked
+     /> no
+    </label>
+    </div>
+    <div class="form-group">
+      <p>recommend course</p>
+      <label>
+       <input
+        name="user-recommend"
+        value="definitely"
+        type="radio"
+        class="input-radio"
+        checked
+       />definitely
+      </label>
+      <label>
+       <input
+        name="user-recommend"
+        value="maybe"
+        type="radio"
+        class="input-radio"
+        checked
+       />maybe
+      </label>
+      <label>
+       <input
+        name="user-recommend"
+        value="not-sure"
+        type="radio"
+        class="input-radio"
+        checked
+       /> not sure
+      </label>
+     
+      </div>
+      <div class="form-group">
+        <p>see improved</p>
+        <label>
+         <input
+          name="prefer"
+          value="lectures"
+          type="checkbox"
+          class="input-checkbox"
+          checked
+         />lectures
+        </label>
+        <label>
+         <input
+          name="prefer"
+          value="material"
+          type="checkbox"
+          class="input-checkbox"
+          checked
+         />material
+        </label>
+        <label>
+         <input
+          name="prefer"
+          value="assignments"
+          type="checkbox"
+          class="input-checkbox"
+          checked
+         /> assignments
+        </label>
+        <label>
+          <input
+           name="prefer"
+           value="exams"
+           type="checkbox"
+           class="input-checkbox"
+           checked
+          /> exams
+         </label>
+        <label>
+          <input
+           name="prefer"
+           value="forum"
+           type="radio"
+           class="input-checkbox"
+           checked
+          /> forum
+         </label>   <label>
+          <input
+           name="prefer"
+           value="additional-courses"
+           type="radio"
+           class="input-checkbox"
+           checked
+          /> courses
+         </label>
+       
+        </div>
+        <div class="form-group">
+          <p>comments</p>
+          <textarea 
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="enter name"></textarea>
+           
+         
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button"
+
+            >submit</button>
+
+             
+           
+            </div>
+   </form>
+  </div>
+  <section class="footer">
+  <p>design for me</p>
+  </section>
+</body>
+</html>
